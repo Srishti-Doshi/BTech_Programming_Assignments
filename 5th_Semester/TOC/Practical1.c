@@ -1,4 +1,4 @@
-// Write a program to count number of 0 s and 1 s in a given string(without using Libraries)
+// Write a C program to count number of 0 s and 1 s in a given string(without using Libraries)
 #include <stdio.h>
 
 int main()
