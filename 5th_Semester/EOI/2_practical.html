@@ -1,0 +1,80 @@
+<!--25|08|25 Practical 2: Basic form using HTML-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Srishti">
+    <meta name="viewport" content="width = divice-width, initial-scale=1.0">
+    <meta name="description" content="This is a website page">
+    <title>Student Learning Form</title>
+</head>
+
+<body>
+    <h2>Student Learning Form</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your full name">
+        </div>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+        </div>
+        <div>
+            <label for="date">Date of Birth</label>
+            <input type="date" name="date" id="date" placeholder="Enter your Date of Birth">
+        </div>
+        <div>
+            <label for="number">Phone Number</label>
+            <input type="number" name="number" id="number" placeholder="Enter your Phone Number">
+        </div>
+
+        <label>Gender</label>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <label>Interests</label>
+        <div>
+            <input type="checkbox" name="interests" id="coding" value="coding">
+            <label for="coding">Coding</label>
+        </div>
+        <div>
+            <input type="checkbox" name="interests" id="music" value="music">
+            <label for="music">Music</label>
+        </div>
+        <div>
+            <input type="checkbox" name="interests" id="sports" value="sports">
+            <label for="sports">Sports</label>
+        </div>
+
+        <div>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="India">India</option>
+                <option value="India">India</option>
+                <option value="India">India</option>
+            </select>
+        </div>
+
+        <label>Your Message</label>
+        <div>
+            <input type="text" name="submit" id="submit" placeholder="submit form">
+        </div>
+        <div>
+            <input type="text" name="download" id="download" placeholder="download as pdf">
+        </div>
+    </form>
+</body>
+
+</html>
