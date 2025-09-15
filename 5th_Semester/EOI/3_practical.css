@@ -1,0 +1,33 @@
+.container {
+    background-color: aliceblue;
+    outline: auto;
+    width: 90vw;
+    padding: 2vw;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    gap: 1vw;
+    justify-content: end;
+}
+
+.para {
+    background-color: rgb(229, 242, 242);
+    padding: 10px;
+    border: 12px solid rgba(255, 255, 255, 0.555);
+    width: 90%;
+    margin: auto;
+}
+
+footer {
+    margin: auto;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
