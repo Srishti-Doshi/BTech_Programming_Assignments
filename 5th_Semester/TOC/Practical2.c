@@ -3,6 +3,11 @@
 #include<stdio.h>
 int main()
 {
+    printf("\n");
+    printf("--- Program: Even or Odd Count of 0s and 1s ---\n");
+    printf("Program By: Srishti Doshi\n");
+    printf("Enrollment Number: 0873CS231123\n");
+
     char str[50];
     int length = 0, zero = 0, one = 0;
 
@@ -39,7 +44,7 @@ int main()
     }
     else
     {
-        printf("Number of 0s (%d) is odd\n");
+        printf("Number of 0s is odd\n");
     }
 
     if(one%2==0)
@@ -48,7 +53,7 @@ int main()
     }
     else
     {
-        printf("Number of 1s (%d) is odd\n");
+        printf("Number of 1s is odd\n");
     }
 
     return 0;

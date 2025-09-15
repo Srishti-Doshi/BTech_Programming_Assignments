@@ -3,8 +3,17 @@
 
 int main()
 {
-    char str[] = "110011";
-    printf("Given String is %s\n", str);
+    printf("\n");
+    printf("--- Program : Count 0s and 1s in a String ---\n");
+    printf("Program By: Srishti Doshi\n");
+    printf("Enrollment Number: 0873CS231123\n");
+
+    char str[50];
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    printf("Entered String is %s\n", str);
     int length = 0, zero = 0, one = 0;
 
     while (str[length] != '\0')
