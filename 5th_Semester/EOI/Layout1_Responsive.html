@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout using Flex and Grid </title>
+    <style>
+        :root {
+            --defcolor: rgb(164, 112, 164);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(227, 196, 227);
+        }
+
+        .sec1 {
+            font-weight: bolder;
+            font-size: large;
+            background-color: var(--defcolor);
+            margin: 10px 20px 2px 20px;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: var(--defcolor);
+            margin: 3px 20px 3px 20px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            background-color: var(--defcolor);
+            margin: 2px 20px 2px 20px;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            background-color: white;
+            margin: 2px 20px 2px 20px;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .sidebar {
+            display: flex;
+            height: 90%;
+            width: 40%;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--defcolor);
+            margin: 0% 2% 0% 1%;
+        }
+
+        .bodyarea {
+            display: flex;
+            height: 90%;
+            width: 60%;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--defcolor);
+            margin: 0% 1% 0% 1%;
+        }
+        footer{
+            background-color: var(--defcolor);
+            margin: 2px 20px 2px 20px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sec1">Logo</section>
+    <nav>Navigation</nav>
+    <header>Header/Banner</header>
+    <main>
+        <div class="sidebar">Side Bar</div>
+        <div class="bodyarea">Body Area</div>
+    </main>
+    <footer>Footer</footer>
+</body>
+
+</html>

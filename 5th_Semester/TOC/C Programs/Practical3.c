@@ -3,6 +3,12 @@
 
 int main()
 {
+    printf("\n");
+    printf("--- Program: Even or Odd Count of 0s and 1s ---\n");
+    printf("Program By: Srishti Doshi\n");
+    printf("Enrollment Number: 0873CS231123\n");
+    printf("\n");
+
     char state1 = 'A', state2 = 'B', PresentState = 'A';
     char str[100];
 
