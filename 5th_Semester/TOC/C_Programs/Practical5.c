@@ -45,7 +45,7 @@ int main()
         case 'B':
             if (str[i] == '0' || str[i] == '1')
             {
-                PS = 'C';
+                PS = 'B';
             }
             break;
         }
