@@ -1,63 +1,48 @@
-// Implement a DFA in C program that accepts all strings containing only '0's over alphabet{0,1}.
-
+// Implement a DFA in C program that accepts all strings containing atleast one '0' over alphabet{0,1}.
 #include <stdio.h>
 
 int main()
 {
-    char s1 = 'A', s2 = 'B', PS = 'A', str[100];
+    char str[100];
+    char PS = 'A';
 
-    int lenstr = 0;
-
-    // input string
     printf("Enter a binary string: ");
     scanf("%s", str);
 
-    // Check string is valid or not and if valid calculate length of string
-    while (str[lenstr] != '\0')
+    for (int i = 0; str[i] != '\0'; i++)
     {
-        if (str[lenstr] == '0' || str[lenstr] == '1')
+        if (str[i] != '0' && str[i] != '1')
         {
-            lenstr++;
-        }
-        else
-        {
-            printf("Invalid string!! Only Binary numbers are allowed.");
+            printf("Invalid string!! Only Binary numbers are allowed.\n");
             return 0;
         }
-    }
 
-    // DFA
-    for (int i = 0; i < lenstr; i++)
-    {
         switch (PS)
         {
         case 'A':
             if (str[i] == '0')
-            {
-                PS = 'A';
-            }
-            else
-            {
                 PS = 'B';
-            }
+            else
+                PS = 'A';
             break;
 
         case 'B':
-            if (str[i] == '0' || str[i] == '1')
-            {
+            if (str[i] == '0')
+                PS = 'T';
+            else
                 PS = 'B';
-            }
+            break;
+
+        case 'T':
+            PS = 'T';
             break;
         }
     }
 
-    //Accept or Reject Condition
-    if (PS == s1)
-    {
-        printf("String Accepted(DFA: only '0's).");
-    }
+    if (PS == 'B')
+        printf("String Accepted (DFA: exactly one '0').\n");
     else
-    {
-        printf("String Rejected(DFA: only '0's).");
-    }
+        printf("String Rejected (DFA: exactly one '0').\n");
+
+    return 0;
 }
