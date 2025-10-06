@@ -1,4 +1,4 @@
-// 4) Implement a DFA in C program that accepts all strings containing three consecutive ones over alphabet {0,1}.
+// 7) Implement a DFA in C program that accepts all strings containing three consecutive ones over alphabet {0,1}.
 
 #include <stdio.h>
 

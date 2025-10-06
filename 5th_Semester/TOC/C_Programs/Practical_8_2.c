@@ -17,7 +17,7 @@ int main()
         {
                 if (str[i] < '0' || str[i] > '9')
                 {
-                        printf("Invalid Input! Only digits 0–9 are allowed.\n");
+                        printf("Invalid Input! Only digits 0 to 9 are allowed.\n");
                         return 0;
                 }
 
