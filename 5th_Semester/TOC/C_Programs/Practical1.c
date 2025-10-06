@@ -1,13 +1,8 @@
-// Write a C program to count number of 0 s and 1 s in a given string(without using Libraries)
+// 1) Write a C program to count number of 0 s and 1 s in a given string(without using Libraries).
 #include <stdio.h>
 
 int main()
 {
-    printf("\n");
-    printf("--- Program : Count 0s and 1s in a String ---\n");
-    printf("Program By: Srishti Doshi\n");
-    printf("Enrollment Number: 0873CS231123\n");
-
     char str[50];
 
     printf("Enter a string: ");
