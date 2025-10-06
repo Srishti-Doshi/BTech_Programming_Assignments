@@ -1,75 +1,59 @@
-// Implement a DFA in C program that accepts all strings ending with '101' over alphabet{0,1}.
+// Implement a DFA in C program that accepts all strings ending with '101' over alphabet {0,1}.
 
 #include <stdio.h>
 
 int main()
 {
     char str[100];
-    char PS = 'A';
+    char state = 'A';
 
-    printf("Enter a Binary String: ");
+    printf("Enter a binary string: ");
     scanf("%s", str);
 
     for (int i = 0; str[i] != '\0'; i++)
     {
         if (str[i] != '0' && str[i] != '1')
         {
-            printf("Invalid string!! Only Binary numbers are allowed.\n");
+            printf("Invalid string! Only 0 and 1 are allowed.\n");
             return 0;
         }
 
-        switch (PS)
+        switch (state)
         {
         case 'A':
             if (str[i] == '0')
-            {
-                PS = 'A';
-            }
+                state = 'A';
             else
-            {
-                PS = 'B';
-            }
+                state = 'B';
             break;
 
         case 'B':
             if (str[i] == '0')
-            {
-                PS = 'C';
-            }
+                state = 'C';
             else
-            {
-                PS = 'B';
-            }
+                state = 'B';
             break;
 
         case 'C':
             if (str[i] == '0')
-            {
-                PS = 'A';
-            }
+                state = 'A';
             else
-            {
-                PS = 'D';
-            }
+                state = 'D';
             break;
 
         case 'D':
             if (str[i] == '0')
-            {
-                PS = 'C';
-            }
+                state = 'C';
             else
-            {
-                PS = 'B';
-            }
+                state = 'B';
             break;
         }
     }
 
-    if (PS == 'D')
-        printf("String Accepted (DFA ending with '101').");
+    if (state == 'D')
+        printf("String Accepted (ends with '101').\n");
     else
-        printf("String Rejected (DFA ending with '101').");
+        printf("String Rejected (does not end with '101').\n");
 
     return 0;
 }
