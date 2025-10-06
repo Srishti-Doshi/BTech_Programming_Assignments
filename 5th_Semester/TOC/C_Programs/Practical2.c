@@ -1,13 +1,8 @@
-/*Question: Write a C program to check whether a given binary string contains an even number of 0s or 1s.*/
+// 2) Write a C program to check whether a given binary string contains an even number of 0s or 1s.
 
 #include<stdio.h>
 int main()
 {
-    printf("\n");
-    printf("--- Program: Even or Odd Count of 0s and 1s ---\n");
-    printf("Program By: Srishti Doshi\n");
-    printf("Enrollment Number: 0873CS231123\n");
-
     char str[50];
     int length = 0, zero = 0, one = 0;
 
